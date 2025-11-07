@@ -20,8 +20,7 @@ def get_gemini_client():
     # 2. Secrets에 키가 없으면, 사용자에게 직접 입력받기
     if not api_key:
         with st.sidebar:
-            st.warning(" Streamlit Secrets(`GEMINI_API_KEY`)가 설정되지 
-않았습니다.")
+            st.warning("Streamlit Secrets(GEMINI_API_KEY)가 설정되지 않았습니다.")
             api_key = st.text_input("Gemini API Key를 입력하세요:", 
 type="password")
             if not api_key:
