@@ -15,7 +15,7 @@ st.subheader("당신의 감정을 시와 노래로 표현해 드립니다.")
 def get_gemini_client():
     """Gemini 클라이언트를 초기화하고 반환합니다."""
     # 1. Streamlit Secrets에서 API 키 로드 시도
-    api_key = st.secrets.get('GEMINI_API_KEY')
+    api_key = st.secrets.get('AIzaSyCKfZzMdM_0CRWd488cLFeVKqcEvk49wy8')
 
     # 2. Secrets에 키가 없으면, 사용자에게 직접 입력받기
     if not api_key:
